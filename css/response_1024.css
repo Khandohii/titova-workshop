@@ -1,0 +1,406 @@
+@media (max-width: 1024px) {
+    /*---------------
+        Main styles
+    ---------------*/
+    body{
+        font-size: 18px;
+    }
+
+
+    .search_mob.active{
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    .main_tabs button{
+        font-size: 18px;
+    }
+
+    /*---------------
+        Header
+    ---------------*/
+    .header_mob{
+        display: block;
+    }
+
+    .header_mob .cont{
+        border-bottom: 1px solid #7f594c;
+    }
+
+
+    .mob_menu_link{
+        display: block
+    }
+
+
+    header{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        top: 80px;
+        height: calc(100% - 80px);
+        overflow-y: auto;
+        z-index: 50;
+        /*border-top: 1px solid #7f594c;*/
+        padding: 30px 0;
+        transition: 0.2s linear;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    header.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header .top .cont{
+        /*flex-direction: column;
+        align-items: stretch;
+        align-content: stretch;*/
+    }
+
+    header .logo{
+        display: none;
+    }
+
+    header .search{
+        display: none;
+    }
+
+    header .link_btn{
+        /*margin: 20px 0 0;*/
+    }
+
+    header .link_btn > *{
+        padding: 5px 35px;
+    }
+
+    header .links{
+        /*margin-top: 30px;*/
+    }
+
+    header .bottom{
+        margin-top: 30px;
+    }
+
+    header .menu{
+        display: block;
+    }
+
+    header .menu .item{
+        line-height: 0;
+    }
+
+    header .menu .item + .item{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    /*---------------
+        Main section
+    ---------------*/
+    .main_banner .box .title{
+        font-size: 60px;
+    }
+
+    .main_banner .box .desc{
+        font-size: 18px;
+    }
+
+    .sect_categories .main_title {
+        margin-bottom: 50px;
+    }
+
+    .sect_categories .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sect_categories .grid .item{
+        grid-column: auto /span 1;
+    }
+
+    .sect_categories .grid .item:first-child{
+        min-height: 350px;
+    }
+
+
+    .products .grid {
+        --items: 3;
+    }
+
+    .products .main_title{
+        margin-bottom: 50px;
+    }
+
+
+    .working_process{
+        margin-top: 100px;
+    }
+
+    .working_process .columns {
+        --items: 1;
+    }
+
+    .working_process .text_block{
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+
+    .terms_of_return{
+        margin-top: 100px;
+    }
+
+    .terms_of_return .main_title{
+        margin-bottom: 50px;
+        text-align: left;
+    }
+
+    .terms_of_return .text_block .cols .col,
+    .terms_of_return .text_block .cols .col + .col{
+        width: 100%;
+    }
+
+
+    .reviews {
+        margin-top: 100px;
+    }
+
+
+    .sect_donation .box{
+        padding: 30px;
+    }
+
+    .sect_map .main_title{
+        margin-bottom: 50px;
+    }
+
+
+
+    .product_info .images {
+        width: calc(50% - 15px);
+    }
+
+    .product_info .data{
+        width: calc(50% - 15px);
+    }
+
+    .product_info .images .thumbs {
+        --margin-left: 10px;
+        --margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .product_info .sew_shoes{
+        order: 2;
+        width: 100%;
+    }
+
+    .product_info .data .box{
+        padding-top: 25px
+    }
+
+    .product_info .data .box + .box,
+    .product_info .data * + .box{
+        margin-top: 25px;
+    }
+
+
+    .product_data .main_tabs{
+        padding: 25px 0;
+    }
+
+    .product_data .main_tabs button:after{
+        bottom: -26px;
+    }
+
+
+    .cart{
+        margin-top: 60px;
+    }
+
+
+
+    .checkout{
+        margin-top: 50px;
+    }
+
+    .checkout .column{
+        width: 100%;
+    }
+
+    .checkout .column + .column{
+        margin-top: 5px;
+    }
+
+
+
+    .about .left{
+        width: calc(50% - 15px);
+    }
+
+    .about .right{
+        width: calc(50% - 15px);
+    }
+
+    .about .text_block {
+        font-size: 18px;
+    }
+
+
+
+    .contacts .columns{
+        --items: 2;
+        justify-content: space-around;
+    }
+
+
+    .conctacts_map{
+        margin-top: 60px;
+    }
+
+
+    .page_content {
+        padding-top: 50px;
+    }
+
+
+    .filter{
+        margin-top: 50px;
+    }
+
+    .filter .cont{
+        align-items: center;
+        align-content: center;
+    }
+
+    .filter + .products {
+        margin-top: 50px;
+    }
+
+    .filter .col_l{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 70;
+        padding: 15px;
+        background: #fffdf8;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s linear;
+    }
+
+    .filter .col_l.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .filter .link_btn-filter{
+        display: block;
+    }
+
+    .filter .filter_title{
+        display: flex;
+    }
+
+    .filter .link_btn-show{
+        display: block;
+    }
+
+
+    .pagination{
+        margin-top: 50px;
+    }
+
+    .pagination .grid{
+        justify-content: center;
+    }
+
+
+    .delivery .columns .col_l{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .delivery .columns .box_contacts{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+
+    .measurements .data {
+        font-size: 20px;
+    }
+
+
+
+    .profile{
+        margin-top: 50px;
+    }
+
+    .profile .col_l{
+        width: 100%;
+    }
+
+    .profile .col_r{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .profile .tabs{
+        border: none;
+        padding-top: 0;
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        --margin-left: 30px;
+        --margin-bottom: 25px;
+        margin-left: calc(var(--margin-left) * -1);
+        margin-bottom: calc(var(--margin-bottom) * -1);
+    }
+
+    .profile .tabs > *{
+        margin-left: var(--margin-left);
+        margin-bottom: var(--margin-bottom);
+    }
+
+    .profile .tabs button{
+        width: auto;
+    }
+
+    .profile .tabs button + button{
+        margin-top: 0;
+    }
+
+    /*---------------
+        Footer
+    ---------------*/
+    footer .top .col_l{
+        width: 100%;
+    }
+
+    footer .top .col_r{
+        width: 100%;
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    footer .bottom .links a + a {
+        margin-left: 30px;
+    }
+
+
+
+    .modal_tailoring .add_img_btn .text_label{
+        font-size: 25px;
+    }
+
+}

@@ -1,0 +1,45 @@
+@media (max-width: 1199px){
+    /*---------------
+        Main styles
+    ---------------*/
+
+    /*---------------
+        Header
+    ---------------*/
+    header .logo{
+        width: 130px;
+    }
+
+    /*---------------
+        Main section
+    ---------------*/
+    .sect_categories .grid {
+        grid-gap: 20px;
+    }
+
+
+    .products .grid {
+        --margin-left: 20px;
+        --margin-bottom: 35px;
+    }
+
+
+    .product_info{
+        margin-top: 60px;
+    }
+
+
+    .profile .form{
+        padding: 30px;
+    }
+
+    /*---------------
+        Footer
+    ---------------*/
+
+
+    .modal_tailoring .desc{
+        font-size: 18px;
+    }
+    
+}

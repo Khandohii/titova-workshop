@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/jquery.rating.css">
+		<link rel="stylesheet" href="css/intlTelInput.css">
+
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1024.css" media="(max-width: 1024px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<!-- Шапка -->
+				<div class="header_mob">
+					<div class="cont flex">
+						<div class="logo"><a href="/"><img src="images/logo.svg" alt=""></a></div>
+
+						<div class="search_btn">
+							<button type="button" class="mini_modal_link" data-modal-id="#search_mob">
+								<svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="11" cy="11" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+									<path d="M20 20L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+								</svg>
+							</button>
+						</div>
+
+						<button type="button" class="mob_menu_link">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+
+				<header>
+					<div class="top">
+						<div class="cont flex">
+							<div class="logo"><a href="/"><img src="images/logo.svg" alt=""></a></div>
+
+							<form action="/" class="search">
+								<div class="select_wrap">
+									<select name="select_category">
+										<option value="">Всі категорії</option>
+										<option value="">Category 1</option>
+										<option value="">Category 2</option>
+										<option value="">Category 3</option>
+										<option value="">Category 4</option>
+										<option value="">Category 5</option>
+									</select>
+								</div>
+
+								<input type="text" name="" value="" placeholder="Шукати товар" class="input">
+
+								<button type="submit" class="submit_btn">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="11" cy="11" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+										<path d="M20 20L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+								</button>
+							</form>
+
+							<div class="lang">
+								<a href="/">UKR</a>
+
+								<a href="/">ENG</a>
+							</div>
+
+							<div class="link_btn"><button type="button" class="scroll_link" data-content="#">Допомогти</button></div>
+
+							<div class="links flex">
+								<a href="/" class="link modal_link" data-content="#signup_modal">
+									<span class="icon">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M19.7274 20.4471C19.2716 19.1713 18.2672 18.0439 16.8701 17.2399C15.4729 16.4358 13.7611 16 12 16C10.2389 16 8.52706 16.4358 7.12991 17.2399C5.73276 18.0439 4.72839 19.1713 4.27259 20.4471" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+											<circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+										</svg>
+									</span>
+
+									Акаунт
+								</a>
+
+								<a href="/" class="link">
+									<span class="icon">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8 12L8 8C8 5.79086 9.79086 4 12 4V4C14.2091 4 16 5.79086 16 8L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+											<path d="M3.69435 12.6678C3.83942 10.9269 3.91196 10.0565 4.48605 9.52824C5.06013 9 5.9336 9 7.68053 9H16.3195C18.0664 9 18.9399 9 19.514 9.52824C20.088 10.0565 20.1606 10.9269 20.3057 12.6678L20.8195 18.8339C20.904 19.8474 20.9462 20.3542 20.6491 20.6771C20.352 21 19.8435 21 18.8264 21H5.1736C4.15655 21 3.64802 21 3.35092 20.6771C3.05382 20.3542 3.09605 19.8474 3.18051 18.8339L3.69435 12.6678Z" stroke="currentColor" stroke-width="2"/>
+										</svg>
+									</span>
+
+									Корзина
+
+									<span class="cart_counter">16</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="bottom">
+						<div class="cont">
+							<nav class="menu flex">
+								<div class="item"><a href="/">Головна</a></div>
+								<div class="item"><a href="/">Каталог</a></div>
+								<div class="item"><a href="/">Про нас</a></div>
+								<div class="item"><a href="/">Як зняти мірки</a></div>
+								<div class="item"><a href="/">Доставка та оплата</a></div>
+								<div class="item"><a href="/">Відгуки</a></div>
+								<div class="item"><a href="/">Контакти</a></div>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+				<div id="search_mob" class="search_mob mini_modal">
+					<form action="/" class="search">
+						<div class="select_wrap">
+							<select name="select_category">
+								<option value="">Всі категорії</option>
+								<option value="">Category 1</option>
+								<option value="">Category 2</option>
+								<option value="">Category 3</option>
+								<option value="">Category 4</option>
+								<option value="">Category 5</option>
+							</select>
+						</div>
+
+						<input type="text" name="" value="" placeholder="Шукати товар" class="input">
+
+						<button type="submit" class="submit_btn">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="11" cy="11" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+								<path d="M20 20L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+						</button>
+					</form>
+				</div>
+				<!-- End Шапка -->
+
+
+				<!-- Основная часть -->
+				<section class="contacts">
+					<div class="cont">
+						<div class="columns flex">
+							<div class="column">
+								<div class="title">Адреса</div>
+
+								<div class="data">Київська обл., м. Бровари, вул. Симона Петлюри 21В, Київ, Україна</div>
+							</div>
+
+							<div class="column">
+								<div class="title">Контакти</div>
+
+								<div class="data">Email : <a href="mailto:handmade_shoes@ukr.net">handmade_shoes@ukr.net</a> <br>Телефон : <a href="tel:+380969687944">+380 (96) 968-79-44</a></div>
+							</div>
+
+							<div class="column">
+								<div class="title">Графік роботи</div>
+
+								<div class="data">Пн – Пт : 09:00 – 18:00 <br>Сб - Нд : Вихідний</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="conctacts_map">
+					<div class="cont">
+						<div id="map"></div>
+					</div>
+				</section>
+
+
+				<section class="sect_callback">
+					<div class="cont">
+						<div class="main_title center">Зв'язатись з нами</div>
+
+						<form action="/" class="form">
+							<div class="line_flex flex">
+								<div class="line_form">
+									<div class="label">Ваше ім'я</div>
+
+									<input type="text" class="input" placeholder="Олег Лазорик">
+								</div>
+
+								<div class="line_form">
+									<div class="label">Ваш email</div>
+
+									<input type="email" class="input" placeholder="">
+								</div>
+							</div>
+
+							<div class="line_form">
+								<div class="label">Тема</div>
+
+								<input type="text" class="input" placeholder="">
+							</div>
+
+							<div class="line_form">
+								<div class="label">Ваше повідомлення</div>
+
+								<textarea name="text"></textarea>
+							</div>
+
+							<div class="submit">
+								<button type="submit" class="submit_btn">Відправити</button>
+							</div>
+						</form>
+					</div>
+				</section>
+				<!-- End Основная часть -->
+			</div>
+
+
+			<!-- Подвал -->
+			<footer>
+				<div class="top">
+					<div class="cont flex">
+						<div class="col_l">
+							<div class="logo"><a href="/"><img src="images/logo.svg" alt=""></a></div>
+
+							<div class="adress">Київська обл., м. Бровари, вул. Симона Петлюри 21В, Київ, Україна</div>
+
+							<div class="socials flex">
+								<a href="/" class="soc" target="_blank" rel="noopener">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16Z" fill="#1877F2"/>
+										<path d="M24 16C24 11.6 20.4 8 16 8C11.6 8 8 11.6 8 16C8 20 10.9 23.3 14.7 23.9V18.3H12.7V16H14.7V14.2C14.7 12.2 15.9 11.1 17.7 11.1C18.6 11.1 19.5 11.3 19.5 11.3V13.3H18.5C17.5 13.3 17.2 13.9 17.2 14.5V16H19.4L19 18.3H17.1V24C21.1 23.4 24 20 24 16Z" fill="white"/>
+									</svg>
+								</a>
+
+								<a href="/" class="soc" target="_blank" rel="noopener">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16Z" fill="url(#paint0_linear_113_10179)"/>
+										<path d="M15.9978 13.3321C14.5289 13.3321 13.3301 14.5309 13.3301 15.9999C13.3301 17.4688 14.5289 18.6676 15.9978 18.6676C17.4668 18.6676 18.6656 17.4688 18.6656 15.9999C18.6656 14.5309 17.4668 13.3321 15.9978 13.3321ZM23.9991 15.9999C23.9991 14.8951 24.0091 13.8004 23.9471 12.6977C23.885 11.4168 23.5928 10.2801 22.6562 9.34348C21.7176 8.40486 20.5829 8.11467 19.302 8.05263C18.1973 7.99059 17.1026 8.0006 15.9999 8.0006C14.8951 8.0006 13.8004 7.99059 12.6977 8.05263C11.4168 8.11467 10.2801 8.40686 9.34348 9.34348C8.40486 10.2821 8.11467 11.4168 8.05263 12.6977C7.99059 13.8024 8.0006 14.8971 8.0006 15.9999C8.0006 17.1026 7.99059 18.1993 8.05263 19.302C8.11467 20.5829 8.40686 21.7196 9.34348 22.6562C10.2821 23.5948 11.4168 23.885 12.6977 23.9471C13.8024 24.0091 14.8971 23.9991 15.9999 23.9991C17.1046 23.9991 18.1993 24.0091 19.302 23.9471C20.5829 23.885 21.7196 23.5928 22.6562 22.6562C23.5948 21.7176 23.885 20.5829 23.9471 19.302C24.0111 18.1993 23.9991 17.1046 23.9991 15.9999ZM15.9978 20.1045C13.7264 20.1045 11.8932 18.2713 11.8932 15.9999C11.8932 13.7284 13.7264 11.8952 15.9978 11.8952C18.2693 11.8952 20.1025 13.7284 20.1025 15.9999C20.1025 18.2713 18.2693 20.1045 15.9978 20.1045ZM20.2707 12.6857C19.7403 12.6857 19.312 12.2574 19.312 11.727C19.312 11.1967 19.7403 10.7684 20.2707 10.7684C20.801 10.7684 21.2293 11.1967 21.2293 11.727C21.2294 11.853 21.2048 11.9777 21.1566 12.0941C21.1085 12.2105 21.0379 12.3162 20.9489 12.4052C20.8598 12.4943 20.7541 12.5649 20.6377 12.613C20.5213 12.6611 20.3966 12.6858 20.2707 12.6857Z" fill="white"/>
+										<defs>
+											<linearGradient id="paint0_linear_113_10179" x1="3.5" y1="4" x2="27" y2="32" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#A440A1"/>
+												<stop offset="0.5" stop-color="#E8355C"/>
+												<stop offset="1" stop-color="#EA4E5B"/>
+											</linearGradient>
+										</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="col_r">
+							<div class="columns flex">
+								<div class="column">
+									<div class="title">Головна</div>
+
+									<ul>
+										<li><a href="/">Каталог</a></li>
+										<li><a href="/">Як зняти мірки</a></li>
+										<li><a href="/">Оплата і доставка</a></li>
+										<li><a href="/">Про нас</a></li>
+										<li><a href="/">Увійти в аккаунт</a></li>
+									</ul>
+								</div>
+
+								<div class="column">
+									<div class="title">Магазин</div>
+
+									<ul>
+										<li><a href="/">Сумки</a></li>
+										<li><a href="/">Взуття</a></li>
+										<li><a href="/">Новинки</a></li>
+										<li><a href="/">Акції</a></li>
+									</ul>
+								</div>
+
+								<div class="column">
+									<div class="title">Контакти</div>
+
+									<ul>
+										<li><a href="/">Яна Смірнова</a></li>
+										<li><a href="tel:+380969687944">+380 (96) 968-79-44</a></li>
+										<li><a href="mailto:handmade_shoes@ukr.net">handmade_shoes@ukr.net</a></li>
+										<li><a href="/">Карта</a></li>
+									</ul>
+								</div>
+
+								<div class="column">
+									<div class="title">Допомога</div>
+
+									<ul>
+										<li><a href="/" class="modal_link" data-content="#callback_modal">Написати нам</a></li>
+										<li><a href="/" class="modal_link" data-content="#review_modal">Залишити відгук</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom">
+					<div class="cont">
+						<div class="grid flex">
+							<div class="copy">&copy; 2022 Yana Titova's WorkShop</div>
+
+							<div class="links flex">
+								<a href="/">Політика конфіденційності</a>
+								<a href="/">Договір оферти</a>
+							</div>
+
+							<div class="up_btn">
+								<button type="button">
+									Наверх
+
+									<svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.35355 7.02018C4.15829 7.21544 3.84171 7.21544 3.64645 7.02018C3.45118 6.82492 3.45118 6.50834 3.64645 6.31307L4.35355 7.02018ZM8 2.66663L7.64645 2.31307L8 1.95952L8.35355 2.31307L8 2.66663ZM12.3536 6.31307C12.5488 6.50833 12.5488 6.82492 12.3536 7.02018C12.1583 7.21544 11.8417 7.21544 11.6464 7.02018L12.3536 6.31307ZM8.5 12.6666C8.5 12.9428 8.27614 13.1666 8 13.1666C7.72386 13.1666 7.5 12.9428 7.5 12.6666L8.5 12.6666ZM3.64645 6.31307L7.64645 2.31307L8.35355 3.02018L4.35355 7.02018L3.64645 6.31307ZM8.35355 2.31307L12.3536 6.31307L11.6464 7.02018L7.64645 3.02018L8.35355 2.31307ZM8.5 2.66663L8.5 12.6666L7.5 12.6666L7.5 2.66663L8.5 2.66663Z" fill="currentColor"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Подвал -->
+		</div>
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br /> или использовать другой более современный.
+		</div>
+
+		<div class="overlay"></div>
+
+
+		<section class="modal" id="signup_modal">
+			<div class="modal_title">Зареєструватись та отримати 10% знижки</div>
+
+			<div class="modal_subtitle">Ви вже маєте обліковий запис? <a href="/" class="modal_link" data-content="#login_modal">Увійти</a></div>
+
+			<form action="/" class="modal_data form">
+				<div class="line_form">
+					<div class="label">Ваш Email</div>
+
+					<input type="email" name="email" class="input">
+				</div>
+
+				<div class="line_form">
+					<div class="label">Ваш пароль</div>
+
+					<div class="field field_password">
+						<input type="password" name="password" class="input" placeholder="6-20 символів">
+
+						<div class="show_password">
+							<button type="button">
+								<svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.947625 5.53439C0.613728 5.99052 0.380584 6.35011 0.254227 6.56588L0 7L0.254227 7.43412C0.380584 7.64989 0.613728 8.00948 0.947625 8.46561C1.50014 9.2204 2.14064 9.9747 2.8647 10.6812C4.97881 12.7441 7.36906 14 10 14C12.6309 14 15.0212 12.7441 17.1353 10.6812C17.8594 9.9747 18.4999 9.2204 19.0524 8.46561C19.3863 8.00948 19.6194 7.64989 19.7458 7.43412L20 7L19.7458 6.56588C19.6194 6.35011 19.3863 5.99052 19.0524 5.53439C18.4999 4.7796 17.8594 4.0253 17.1353 3.31878C15.0212 1.25588 12.6309 0 10 0C7.36906 0 4.97881 1.25588 2.8647 3.31878C2.14064 4.0253 1.50014 4.7796 0.947625 5.53439ZM2.40701 7.44845C2.2914 7.29051 2.18591 7.14044 2.09087 7C2.18591 6.85956 2.2914 6.70949 2.40701 6.55155C2.90533 5.87079 3.48381 5.18954 4.13286 4.55622C5.9419 2.79099 7.92316 1.75 10 1.75C12.0768 1.75 14.0581 2.79099 15.8671 4.55622C16.5162 5.18954 17.0947 5.87079 17.593 6.55155C17.7086 6.70949 17.8141 6.85956 17.9091 7C17.8141 7.14044 17.7086 7.29051 17.593 7.44845C17.0947 8.12921 16.5162 8.81046 15.8671 9.44378C14.0581 11.209 12.0768 12.25 10 12.25C7.92316 12.25 5.9419 11.209 4.13286 9.44378C3.48381 8.81046 2.90533 8.12921 2.40701 7.44845ZM10 10.5C8.01902 10.5 6.41312 8.933 6.41312 7C6.41312 5.067 8.01902 3.5 10 3.5C11.981 3.5 13.5869 5.067 13.5869 7C13.5869 8.933 11.981 10.5 10 10.5ZM11.7934 7C11.7934 7.9665 10.9905 8.75 10 8.75C9.00951 8.75 8.20656 7.9665 8.20656 7C8.20656 6.0335 9.00951 5.25 10 5.25C10.9905 5.25 11.7934 6.0335 11.7934 7Z" fill="currentColor"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Зареєструватися</button>
+				</div>
+
+				<div class="desc">В деякий час ми надсилаємо коди купонів</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="login_modal">
+			<div class="modal_title">Увійти в обліковий запис</div>
+
+			<div class="modal_subtitle">Немає облікового запису? <a href="/" class="modal_link" data-content="#signup_modal">Зареєструватися</a></div>
+
+			<form action="/" class="modal_data form">
+				<div class="line_form">
+					<div class="label">Ваш Email</div>
+
+					<input type="email" name="email" class="input">
+				</div>
+
+				<div class="line_form">
+					<div class="label">Ваш пароль</div>
+
+					<div class="field field_password">
+						<input type="password" name="password" class="input" placeholder="6-20 символів">
+
+						<div class="show_password">
+							<button type="button">
+								<svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.947625 5.53439C0.613728 5.99052 0.380584 6.35011 0.254227 6.56588L0 7L0.254227 7.43412C0.380584 7.64989 0.613728 8.00948 0.947625 8.46561C1.50014 9.2204 2.14064 9.9747 2.8647 10.6812C4.97881 12.7441 7.36906 14 10 14C12.6309 14 15.0212 12.7441 17.1353 10.6812C17.8594 9.9747 18.4999 9.2204 19.0524 8.46561C19.3863 8.00948 19.6194 7.64989 19.7458 7.43412L20 7L19.7458 6.56588C19.6194 6.35011 19.3863 5.99052 19.0524 5.53439C18.4999 4.7796 17.8594 4.0253 17.1353 3.31878C15.0212 1.25588 12.6309 0 10 0C7.36906 0 4.97881 1.25588 2.8647 3.31878C2.14064 4.0253 1.50014 4.7796 0.947625 5.53439ZM2.40701 7.44845C2.2914 7.29051 2.18591 7.14044 2.09087 7C2.18591 6.85956 2.2914 6.70949 2.40701 6.55155C2.90533 5.87079 3.48381 5.18954 4.13286 4.55622C5.9419 2.79099 7.92316 1.75 10 1.75C12.0768 1.75 14.0581 2.79099 15.8671 4.55622C16.5162 5.18954 17.0947 5.87079 17.593 6.55155C17.7086 6.70949 17.8141 6.85956 17.9091 7C17.8141 7.14044 17.7086 7.29051 17.593 7.44845C17.0947 8.12921 16.5162 8.81046 15.8671 9.44378C14.0581 11.209 12.0768 12.25 10 12.25C7.92316 12.25 5.9419 11.209 4.13286 9.44378C3.48381 8.81046 2.90533 8.12921 2.40701 7.44845ZM10 10.5C8.01902 10.5 6.41312 8.933 6.41312 7C6.41312 5.067 8.01902 3.5 10 3.5C11.981 3.5 13.5869 5.067 13.5869 7C13.5869 8.933 11.981 10.5 10 10.5ZM11.7934 7C11.7934 7.9665 10.9905 8.75 10 8.75C9.00951 8.75 8.20656 7.9665 8.20656 7C8.20656 6.0335 9.00951 5.25 10 5.25C10.9905 5.25 11.7934 6.0335 11.7934 7Z" fill="currentColor"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="line_flex flex">
+					<div class="line_form">
+						<div class="checkbox">
+							<label class="label_check">
+								<input type="checkbox" name="save_password">
+
+								<span class="check_text">Зберегти пароль</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="line_form">
+						<div class="forgot_password"><a href="/">Забули пароль?</a></div>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Увійти</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="review_modal">
+			<div class="modal_title">Напишіть свій відгук</div>
+
+			<form action="/" class="modal_data form">
+				<div class="line_form">
+					<div class="rating">
+						<div class="star">
+							<input name="review_rate" type="radio" class="wow" value="1">
+							<input name="review_rate" type="radio" class="wow" value="2">
+							<input name="review_rate" type="radio" class="wow" value="3">
+							<input name="review_rate" type="radio" class="wow" value="4">
+							<input name="review_rate" type="radio" class="wow" value="5">
+
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="line_form">
+					<div class="label">Ваше ім'я</div>
+
+					<input type="text" name="name" class="input">
+				</div>
+
+				<div class="line_form">
+					<div class="label">Ваш відгук</div>
+
+					<div class="field field_add_photo">
+						<textarea name="review_text"></textarea>
+
+						<label for="file_review" class="add_file_btn">
+							<span class="icon">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.66667 14H1.33333V1.33333H14V8.66667C14 9.03486 14.2985 9.33333 14.6667 9.33333C15.0349 9.33333 15.3333 9.03486 15.3333 8.66667V0.666667C15.3333 0.298477 15.0349 0 14.6667 0H0.666667C0.298477 0 0 0.298477 0 0.666667V14.6667C0 15.0349 0.298477 15.3333 0.666667 15.3333H8.66667C9.03486 15.3333 9.33333 15.0349 9.33333 14.6667C9.33333 14.2985 9.03486 14 8.66667 14ZM11.8047 6.86193C11.5444 6.60158 11.1223 6.60158 10.8619 6.86193L7.93744 9.78641L5.73333 8.13333C5.46792 7.93427 5.09652 7.96067 4.86193 8.19526L2.86193 10.1953C2.60158 10.4556 2.60158 10.8777 2.86193 11.1381C3.12228 11.3984 3.54439 11.3984 3.80474 11.1381L5.39589 9.54692L7.6 11.2C7.86541 11.3991 8.23681 11.3727 8.4714 11.1381L11.8047 7.80474C12.0651 7.54439 12.0651 7.12228 11.8047 6.86193ZM6 6.66667C4.89543 6.66667 4 5.77124 4 4.66667C4 3.5621 4.89543 2.66667 6 2.66667C7.10457 2.66667 8 3.5621 8 4.66667C8 5.77124 7.10457 6.66667 6 6.66667ZM6.66667 4.66667C6.66667 5.03486 6.36819 5.33333 6 5.33333C5.63181 5.33333 5.33333 5.03486 5.33333 4.66667C5.33333 4.29848 5.63181 4 6 4C6.36819 4 6.66667 4.29848 6.66667 4.66667ZM12.6667 11.3333C12.6667 10.9651 12.9651 10.6667 13.3333 10.6667C13.7015 10.6667 14 10.9651 14 11.3333V12.6667H12.6667V11.3333ZM12.6667 14H11.3333C10.9651 14 10.6667 13.7015 10.6667 13.3333C10.6667 12.9651 10.9651 12.6667 11.3333 12.6667H12.6667V14ZM12.6667 14H14V15.3333C14 15.7015 13.7015 16 13.3333 16C12.9651 16 12.6667 15.7015 12.6667 15.3333V14ZM14 14V12.6667H15.3333C15.7015 12.6667 16 12.9651 16 13.3333C16 13.7015 15.7015 14 15.3333 14H14Z" fill="currentColor"/>
+								</svg>
+							</span>
+						</label>
+					</div>
+
+					<div class="file">
+						<input type="file" name="" id="file_review">
+
+						<div class="images flex">
+							<div class="img"><img src="images/tmp/review_img.jpg" alt=""></div>
+							<div class="img"><img src="images/tmp/review_img2.jpg" alt=""></div>
+							<div class="img"><img src="images/tmp/review_img3.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Надіслати відгук</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal modal_callback" id="callback_modal">
+			<div class="modal_title center">Зв'язатись з нами</div>
+
+			<form action="/" class="modal_data form">
+				<div class="line_flex flex">
+					<div class="line_form">
+						<div class="label">Ваше ім'я</div>
+
+						<input type="text" name="email" class="input" placeholder="Олег Лазорик">
+					</div>
+
+					<div class="line_form">
+						<div class="label">Ваш Email</div>
+
+						<input type="email" name="email" class="input">
+					</div>
+				</div>
+
+				<div class="line_form">
+					<div class="label">Тема</div>
+
+					<input type="text" name="subject" class="input">
+				</div>
+
+				<div class="line_form">
+					<div class="label">Ваше повідомлення</div>
+
+					<textarea></textarea>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Відправити</button>
+				</div>
+			</form>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/jquery-migrate-1.4.1.min.js"></script>
+
+		<script src="js/lozad.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/jquery.rating.pack.js"></script>
+
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/intlTelInput-jquery.min.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap&v=weekly"></script>
+
+		<script>
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 50.52386817637722, lng: 30.79443158286462},
+				zoom: 16,
+			});
+
+			const image = "images/map-marker.svg";
+
+			const beachMarker = new google.maps.Marker({
+				position: {lat: 50.52386817637722, lng: 30.79443158286462},
+				map,
+				icon: image,
+			});
+
+
+		</script>
+	</body>
+</html>
